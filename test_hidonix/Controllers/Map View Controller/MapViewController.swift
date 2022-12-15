@@ -16,6 +16,8 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MGLMapView!
     
+    @IBOutlet weak var locationsCollectionView: UICollectionView!
+    
     private let dummyPoints = [
         CLLocationCoordinate2D(latitude: 37.5389733388, longitude: 15.1312623918),
         CLLocationCoordinate2D(latitude: 37.5389733388 , longitude: 15.1312623918),
@@ -47,6 +49,19 @@ extension MapViewController: MGLMapViewDelegate {
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
         mapView.setCenter(annotation.coordinate, animated: true)
     }
+    
+}
+
+extension MapViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dummyPoints.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath)
+        return cell
+    }
+    
     
 }
 
