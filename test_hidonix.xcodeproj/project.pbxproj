@@ -3,23 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C2844957294BB58400C98EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2844956294BB58400C98EA9 /* AppDelegate.swift */; };
 		C2844959294BB58400C98EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2844958294BB58400C98EA9 /* SceneDelegate.swift */; };
-		C284495B294BB58400C98EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284495A294BB58400C98EA9 /* ViewController.swift */; };
+		C284495B294BB58400C98EA9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284495A294BB58400C98EA9 /* MapViewController.swift */; };
 		C284495E294BB58400C98EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C284495C294BB58400C98EA9 /* Main.storyboard */; };
 		C2844960294BB58500C98EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C284495F294BB58500C98EA9 /* Assets.xcassets */; };
 		C2844963294BB58500C98EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2844961294BB58500C98EA9 /* LaunchScreen.storyboard */; };
+		CB75B99EA605845B1AA87F3F /* Pods_test_hidonix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EDB227C4F977B4156A104 /* Pods_test_hidonix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18918D4D1C5CEB5681CDFBA7 /* Pods-test_hidonix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_hidonix.release.xcconfig"; path = "Target Support Files/Pods-test_hidonix/Pods-test_hidonix.release.xcconfig"; sourceTree = "<group>"; };
+		692EDB227C4F977B4156A104 /* Pods_test_hidonix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_hidonix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E55548F8FC46ED92ADCA189 /* Pods-test_hidonix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_hidonix.debug.xcconfig"; path = "Target Support Files/Pods-test_hidonix/Pods-test_hidonix.debug.xcconfig"; sourceTree = "<group>"; };
 		C2844953294BB58400C98EA9 /* test_hidonix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_hidonix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2844956294BB58400C98EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2844958294BB58400C98EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C284495A294BB58400C98EA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C284495A294BB58400C98EA9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C284495D294BB58400C98EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C284495F294BB58500C98EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2844962294BB58500C98EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB75B99EA605845B1AA87F3F /* Pods_test_hidonix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DF9D1D21A051ED679D67A05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				692EDB227C4F977B4156A104 /* Pods_test_hidonix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		749CD002688864324C727CE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E55548F8FC46ED92ADCA189 /* Pods-test_hidonix.debug.xcconfig */,
+				18918D4D1C5CEB5681CDFBA7 /* Pods-test_hidonix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C284494A294BB58400C98EA9 = {
 			isa = PBXGroup;
 			children = (
 				C2844955294BB58400C98EA9 /* test_hidonix */,
 				C2844954294BB58400C98EA9 /* Products */,
+				749CD002688864324C727CE7 /* Pods */,
+				1DF9D1D21A051ED679D67A05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,39 @@
 		C2844955294BB58400C98EA9 /* test_hidonix */ = {
 			isa = PBXGroup;
 			children = (
-				C2844956294BB58400C98EA9 /* AppDelegate.swift */,
-				C2844958294BB58400C98EA9 /* SceneDelegate.swift */,
-				C284495A294BB58400C98EA9 /* ViewController.swift */,
-				C284495C294BB58400C98EA9 /* Main.storyboard */,
+				C284496A294BB59700C98EA9 /* Application */,
+				C284496C294BB5D800C98EA9 /* Controllers */,
+				C284496B294BB5B700C98EA9 /* Views */,
 				C284495F294BB58500C98EA9 /* Assets.xcassets */,
-				C2844961294BB58500C98EA9 /* LaunchScreen.storyboard */,
 				C2844964294BB58500C98EA9 /* Info.plist */,
 			);
 			path = test_hidonix;
+			sourceTree = "<group>";
+		};
+		C284496A294BB59700C98EA9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C2844956294BB58400C98EA9 /* AppDelegate.swift */,
+				C2844958294BB58400C98EA9 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C284496B294BB5B700C98EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C284495C294BB58400C98EA9 /* Main.storyboard */,
+				C2844961294BB58500C98EA9 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C284496C294BB5D800C98EA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C284495A294BB58400C98EA9 /* MapViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2844967294BB58500C98EA9 /* Build configuration list for PBXNativeTarget "test_hidonix" */;
 			buildPhases = (
+				87B376A6EC94D69FFC184DD8 /* [CP] Check Pods Manifest.lock */,
 				C284494F294BB58400C98EA9 /* Sources */,
 				C2844950294BB58400C98EA9 /* Frameworks */,
 				C2844951294BB58400C98EA9 /* Resources */,
+				E3AB1FD450BF51ED5AFDF730 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +153,7 @@
 				};
 			};
 			buildConfigurationList = C284494E294BB58400C98EA9 /* Build configuration list for PBXProject "test_hidonix" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,12 +183,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87B376A6EC94D69FFC184DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test_hidonix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AB1FD450BF51ED5AFDF730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_hidonix/Pods-test_hidonix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test_hidonix/Pods-test_hidonix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test_hidonix/Pods-test_hidonix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C284494F294BB58400C98EA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C284495B294BB58400C98EA9 /* ViewController.swift in Sources */,
+				C284495B294BB58400C98EA9 /* MapViewController.swift in Sources */,
 				C2844957294BB58400C98EA9 /* AppDelegate.swift in Sources */,
 				C2844959294BB58400C98EA9 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,12 +374,14 @@
 		};
 		C2844968294BB58500C98EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E55548F8FC46ED92ADCA189 /* Pods-test_hidonix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZMX9TYLT4;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR)) arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_hidonix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +389,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,12 +405,14 @@
 		};
 		C2844969294BB58500C98EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18918D4D1C5CEB5681CDFBA7 /* Pods-test_hidonix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZMX9TYLT4;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR)) arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_hidonix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -323,6 +420,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
