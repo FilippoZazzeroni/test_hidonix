@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C232994F294CDE540009F979 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232994E294CDE540009F979 /* CustomAnnotationView.swift */; };
 		C2844957294BB58400C98EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2844956294BB58400C98EA9 /* AppDelegate.swift */; };
 		C2844959294BB58400C98EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2844958294BB58400C98EA9 /* SceneDelegate.swift */; };
 		C284495B294BB58400C98EA9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284495A294BB58400C98EA9 /* MapViewController.swift */; };
@@ -22,6 +23,7 @@
 		18918D4D1C5CEB5681CDFBA7 /* Pods-test_hidonix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_hidonix.release.xcconfig"; path = "Target Support Files/Pods-test_hidonix/Pods-test_hidonix.release.xcconfig"; sourceTree = "<group>"; };
 		692EDB227C4F977B4156A104 /* Pods_test_hidonix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_hidonix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E55548F8FC46ED92ADCA189 /* Pods-test_hidonix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test_hidonix.debug.xcconfig"; path = "Target Support Files/Pods-test_hidonix/Pods-test_hidonix.debug.xcconfig"; sourceTree = "<group>"; };
+		C232994E294CDE540009F979 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		C2844953294BB58400C98EA9 /* test_hidonix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_hidonix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2844956294BB58400C98EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2844958294BB58400C98EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				C284495A294BB58400C98EA9 /* MapViewController.swift */,
 				C284496D294BCB9200C98EA9 /* LocationDetailCell.swift */,
 				C284496E294BCB9200C98EA9 /* LocationDetailCell.xib */,
+				C232994E294CDE540009F979 /* CustomAnnotationView.swift */,
 			);
 			path = "Map View Controller";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C284495B294BB58400C98EA9 /* MapViewController.swift in Sources */,
+				C232994F294CDE540009F979 /* CustomAnnotationView.swift in Sources */,
 				C2844957294BB58400C98EA9 /* AppDelegate.swift in Sources */,
 				C2844959294BB58400C98EA9 /* SceneDelegate.swift in Sources */,
 				C284496F294BCB9200C98EA9 /* LocationDetailCell.swift in Sources */,
