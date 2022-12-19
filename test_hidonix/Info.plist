@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>MGLMapboxAccessToken</key>
-    <string>pk.eyJ1IjoiaGlkb25peCIsImEiOiJjbGJveXp6dmwwaWhtM29xN2FmZjhpNG00In0.TLEL9go2FtMVL3yH3jxCjA</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiaGlkb25peCIsImEiOiJjbGJveXp6dmwwaWhtM29xN2FmZjhpNG00In0.TLEL9go2FtMVL3yH3jxCjA</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
