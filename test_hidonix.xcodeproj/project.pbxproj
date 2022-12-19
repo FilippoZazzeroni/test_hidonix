@@ -15,6 +15,7 @@
 		C2844963294BB58500C98EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2844961294BB58500C98EA9 /* LaunchScreen.storyboard */; };
 		C284496F294BCB9200C98EA9 /* LocationDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C284496D294BCB9200C98EA9 /* LocationDetailCell.swift */; };
 		C2844970294BCB9200C98EA9 /* LocationDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C284496E294BCB9200C98EA9 /* LocationDetailCell.xib */; };
+		C2E72E582950B779001F2E57 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E72E572950B779001F2E57 /* SearchResultsViewController.swift */; };
 		C2F31352294DB7E800D56868 /* LocationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31351294DB7E800D56868 /* LocationApi.swift */; };
 		C2F31355294DBBD200D56868 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31354294DBBD200D56868 /* LocationDetailViewController.swift */; };
 		C2F8494E294DF81800440583 /* pois.json in Resources */ = {isa = PBXBuildFile; fileRef = C2F8494D294DF81800440583 /* pois.json */; };
@@ -39,6 +40,7 @@
 		C2844964294BB58500C98EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C284496D294BCB9200C98EA9 /* LocationDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailCell.swift; sourceTree = "<group>"; };
 		C284496E294BCB9200C98EA9 /* LocationDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationDetailCell.xib; sourceTree = "<group>"; };
+		C2E72E572950B779001F2E57 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		C2F31351294DB7E800D56868 /* LocationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApi.swift; sourceTree = "<group>"; };
 		C2F31354294DBBD200D56868 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		C2F8494D294DF81800440583 /* pois.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pois.json; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				C2F8B325294F748A0099EC1E /* MapViewController.swift */,
 				C2F84957294E2B0100440583 /* PointsDataSource.swift */,
+				C2E72E572950B779001F2E57 /* SearchResultsViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				C2F8B326294F748A0099EC1E /* MapViewController.swift in Sources */,
 				C232994F294CDE540009F979 /* CustomAnnotationView.swift in Sources */,
 				C2F84951294E199700440583 /* Location.swift in Sources */,
+				C2E72E582950B779001F2E57 /* SearchResultsViewController.swift in Sources */,
 				C2F31355294DBBD200D56868 /* LocationDetailViewController.swift in Sources */,
 				C2844957294BB58400C98EA9 /* AppDelegate.swift in Sources */,
 				C2F84958294E2B0100440583 /* PointsDataSource.swift in Sources */,
@@ -457,7 +461,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZMX9TYLT4;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR)) arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_hidonix/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app asks for user location to display the current location on the map";
@@ -489,7 +492,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZMX9TYLT4;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR)) arm64";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = test_hidonix/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app asks for user location to display the current location on the map";

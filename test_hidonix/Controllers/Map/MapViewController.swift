@@ -16,6 +16,10 @@ class MapViewController: UIViewController {
     
     @IBOutlet private weak var locationsCollectionView: UICollectionView!
     
+    private var searchController: UISearchController!
+    
+    private let searchResultsViewController = SearchResultsViewController()
+    
     private let pointsDataSource = PointsDataSource()
     
     private var annotationViews = [MGLAnnotationView]()
@@ -25,12 +29,27 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSearchControllerAndSearchResultsViewController()
+        
         setupCollectionView()
+        
         pointsDataSource.navigationController = navigationController
         pointsDataSource.onFetchPositions = { [weak self] in
             self?.setupMapView()
+            self?.searchResultsViewController.locations = self?.pointsDataSource.getLocations()
         }
         
+    }
+    
+    private func setupSearchControllerAndSearchResultsViewController() {
+        searchResultsViewController.onPressedResultCell = { index in
+            self.searchController.dismiss(animated: true)
+            self.locationsCollectionView.delegate?.collectionView?(self.locationsCollectionView, didSelectItemAt: IndexPath(item: index, section: 0))
+        }
+        searchController = UISearchController(searchResultsController: searchResultsViewController)
+        searchController.searchBar.searchTextField.backgroundColor = .white
+        searchController.searchResultsUpdater = searchResultsViewController
+        navigationItem.searchController = searchController
     }
     
     private func setupCollectionView() {
@@ -54,6 +73,7 @@ extension MapViewController: MGLMapViewDelegate {
         
         if annotation is MGLPointAnnotation {
             if let previouslySelectedIndex = pointsDataSource.setMapPointSelected(with: annotation.coordinate) {
+                annotationViews[previouslySelectedIndex].setSelected(false, animated: true)
                 locationsCollectionView.reloadItems(at: [IndexPath(item: previouslySelectedIndex, section: 0)])
             }
             let indexPath = IndexPath(item: pointsDataSource.getMapPointIndex(for: annotation.coordinate), section: 0)

@@ -94,6 +94,10 @@ class PointsDataSource: NSObject {
         return mapPoints[index]
     }
     
+    func getLocations() -> [Location] {
+        return mapPoints.map { $0.location }
+    }
+    
 }
 
 extension PointsDataSource: UICollectionViewDataSource {
