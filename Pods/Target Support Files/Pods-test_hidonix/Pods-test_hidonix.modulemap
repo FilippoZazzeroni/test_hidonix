@@ -1,0 +1,6 @@
+framework module Pods_test_hidonix {
+  umbrella header "Pods-test_hidonix-umbrella.h"
+
+  export *
+  module * { export * }
+}
